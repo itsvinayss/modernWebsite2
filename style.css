@@ -1,0 +1,370 @@
+@font-face {
+    font-family: nb;
+    src: url(./NBInternationalProBoo.ttf);
+}
+@font-face {
+    font-family: rj;
+    src: url(./Rejouice-Headline.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"nb";
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+
+#page1{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    /* background-color: grey; */
+}
+
+#page1 video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    /* z-index: -1; */
+}
+#cursor{
+    height: 7.5vw;
+    width: 7.5vw;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9;
+    background-color: #FF5F38;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%,-50%);
+}
+
+#cursor h5{
+    font-size: 1.15vw;
+    font-weight: 100;
+}
+
+#page1-content{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    /* background-color: rgb(0, 0, 0); */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+    /* padding-bottom: 5vw;    */
+
+}
+nav{
+    /* background-color: red; */
+    display: flex;
+    width: 100%;
+    height: 15vh;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 4vw;
+}
+
+nav h3{
+    font-weight: 100;
+    font-size: 1.4vw;
+}
+
+nav h4{
+    font-size:1.5vw ;
+    font-weight: 100;
+}
+
+#page1-content h1{
+    line-height: 20vw;
+    font-family: "rj";
+    font-size: 26vw;
+    font-weight: 100;
+}
+
+#page1-content h1 span{
+    font-family:"rj";
+    font-weight: 100;
+    display: inline-block;
+}
+
+#page2{
+    position: relative;
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+}
+
+/* 
+<div class="elem">
+<div class="left-content">
+    <h3>Full-service digital agency.</h3><br>
+    <h3>Two engagement models.</h3>
+
+
+    <h3>Paris / San Diego</h3>
+
+</div>
+<div class="center-content">
+    <h1>We are a digital brand accelerator. Our mission is to transform founders' visions into remarkable brands. Choose traditional compensation or an equity offset through our Venture Model—your vision, your decision.</h1>
+</div>
+    
+</div> */
+
+#page2content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    height: 100%;
+    width: 100%;
+}
+#page2content p{
+    margin: 4px;
+}
+
+#lr-content{
+    display: flex;
+    justify-content:space-between; 
+}
+
+.left{
+    padding: 6vw 2vw;
+    line-height: 1vw;
+}
+
+.left h3{
+    font-size: 1.7vw;
+    font-weight: 100;
+}
+
+.right{
+    padding: 7vw 3vw;
+}
+
+.right h2{
+    font-size: 1.7vw;
+    font-weight: 100;
+}
+.center{
+    margin-top: 0vw;
+    padding: 0vw 6vw;
+    display: flex;
+    text-align: center;
+}
+.center p{
+    font-size: 4vw;
+}
+
+#page3{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 2vw;
+    
+}
+
+#page3 .page-top{
+    margin-top: 13vw;
+    text-align: center;
+}
+
+.page-top h3{
+    font-size: 1vw;
+    font-weight: 100;
+    margin-bottom: 1.5vw;
+}
+
+.page-top h2{
+    line-height: 5vw;
+    font-size: 4.5vw;
+    font-weight: 100;
+}
+.page-top span{
+    font-size: 0.7vw ;
+    border-radius: 50px;
+    padding: 0.3vw 0.6vw;
+    background-color: black;
+    color: white;
+}
+
+.page-top i{
+    font-weight: 100;
+    font-size: 1vw;
+    margin-left: 1vw;
+}
+
+#page3-elements {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: red; */
+    height: 80vh;
+    width: 100%;
+    margin-top: 12vw;
+}
+
+#page3-elements .box1{
+    position: relative;
+    /* background-color: blue; */
+    height: 100%;
+    width: 32.5%;
+
+}
+#page3-elements .box1 video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#page3-elements .box1 img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: all ease 1s;
+
+}
+
+#page3-elements .box1:hover img{
+    opacity: 0;
+}
+
+#page4{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(4, 4, 4); */
+
+}
+
+#page4 video{
+    /* background-color: black; */
+    height: 100%;
+    width: 100%;
+}
+
+#page4 svg{
+    height: 50vh;
+    position: absolute;
+}
+
+/* #cursor2{
+    height: 6vw;
+    width: 6vw;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9;
+    background-color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+}
+
+#cursor2 h5{
+    color: white;
+    font-size: 1.15vw;
+    font-weight: 100;
+} */
+
+
+#page5{
+    height: 100vh;
+    width: 100%;
+    padding: 5vw 0;
+    position: relative;
+}
+
+#page5 h1{
+    width: 96%;
+    margin-left: 2%;
+    font-size: 9vw;
+    font-weight: 200;
+    font-family: rj;
+    border-bottom: 1px solid black;
+}
+
+#swiper-div{
+    margin-top: -4.1%;
+    /* height: 70vh;
+    width: 100%; */
+    /* position: relative; */
+    overflow: hidden;
+    /* background-color: red; */
+}
+
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  @keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%); /* Ensures the animation loops back to the start */
+    }
+}
+
+  .swiper-slide {
+    /* width: 400px ;  */
+    text-align: center;
+    font-size: 18px;
+    /* background: #ffffff; */
+    /* position: relative; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    animation: scroll 40s infinite linear;
+  }
+
+  .swiper-slide img {
+    
+    /* display: block;
+    position: relative; */
+    width: 18%;
+    /* height: 100%;/ */
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .swiper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+/* .swiper-slide{
+    animation: scroll 40s infinite linear;
+} */
+  #loader{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: black;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+  }
